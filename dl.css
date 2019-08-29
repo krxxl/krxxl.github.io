@@ -1,0 +1,266 @@
+.grid-block{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.header .header__flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header__lessons {
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 561px;
+  padding: 26px 0;
+  margin-bottom: -5px;
+  margin-right: -9px;
+}
+
+.header .header__lesson {
+  cursor: pointer;
+  margin-right: 9px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: black;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.header .header__lesson:hover {
+  opacity: 0.7;
+}
+
+.timer {
+  background: #F1F1F1;
+  color: black;
+  padding: 51px 0 59px;
+}
+
+.timer .timer__header {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.timer .timer__input {
+  margin: 33px 0;
+  border: 2px solid #3590CC;
+  padding: 8px 10px;
+  font-size: 16px;
+  line-height: 22px;
+  outline: 0;
+  outline-offset: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+  max-width: 380px;
+  width: 100%;
+}
+
+.timer .timer__result {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.lightbulbs{
+  padding: 66px 0 68px;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.lightbulbs .lightbulbs__header{
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 32px;
+}
+
+.lightbulbs .lightbulbs__flex-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lightbulbs .lightbulbs__item{
+  margin-right: 23px;
+  opacity: 0.2;
+  transition: opacity 0.5s ease;
+}
+
+.lightbulbs .lightbulbs__item:hover{
+  opacity: 1;
+}
+
+.lightbulbs .lightbulbs__item-filter {
+  filter: drop-shadow(0 0 5px rgba(217, 24, 24, 0.5));
+}
+
+.parallax{
+  background: #F1F1F1;
+  color: black;
+  padding: 63px 0 70px;
+}
+
+.parallax .parallax__header{
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 32px;
+}
+
+.parallax .parallax__section{
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 169px 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  z-index: 1;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.parallax .parallax__section:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(196, 196, 196, 0.7);
+  z-index: 3;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transition: background 1.5s ease;
+}
+
+.parallax .parallax__section:hover:before{
+  background: rgba(196, 196, 196, 0);
+}
+
+.parallax .parallax__wrapper{
+  position: absolute;
+  top: -20%;
+}
+
+.parallax .parallax__section img{
+  position: absolute;
+  left: -25%;
+  top: -20%;
+  min-width: 150%;
+  min-height: 110.5%;
+  max-width: none;
+  z-index: 2;
+  transition: transform 7s ease;
+}
+
+.parallax .parallax__section img:hover{
+  transform: scale(1.5);
+}
+
+.parallax .parallax__descrition{
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  z-index: 4;
+}
+
+.slider{
+  padding: 60px 0 45px;
+  position: relative;
+}
+
+.slider .slider__header{
+  font-size: 36px;
+  line-height: 36px;
+  padding-bottom: 32px;
+}
+.slider__box{
+  width: 780px;
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.slider__window{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 1s ease;
+}
+
+.slider__item{
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 5px;
+}
+
+.slider__item img{
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.slider__arrow{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.slider__arrow-left:before{
+  content: '';
+  position: absolute;
+  background: url("img/Vector.png") no-repeat;
+  width: 24px;
+  height: 58px;
+  left: 0;
+}
+
+.slider__arrow-right:before{
+  content: '';
+  position: absolute;
+  background: url("img/Vector.png") no-repeat;
+  width: 24px;
+  height: 58px;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.slider__control{
+  position: absolute;
+  width: 1180px;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px
+}
+
+.slider__dot{
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #9C9C9C;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.slider__dot:last-child{
+  margin-right: 0;
+}
+
+.active{
+  width: 8px;
+  height: 8px;
+  background: #3590CC;
+  cursor: default;
+  pointer-events: none;
+}
